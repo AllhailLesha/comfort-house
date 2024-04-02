@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Akrobat';
+  src: url('../fonts/Akrobat-Bold.woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Calibri Regular';
+  src: url('../fonts/Akrobat-Bold.woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Akrobat-Bold.woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Calibri Bold';
+  src: url('../fonts/Akrobat-Bold.woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
