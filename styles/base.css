@@ -7,6 +7,7 @@ body {
 
 .container {
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  width: 100%;
   margin-inline: auto;
   padding-inline: var(--container-padding-x);
 }
@@ -22,4 +23,61 @@ body {
   clip-path: inset(100%) !important;
   clip: rect(0 0 0 0) !important;
   overflow: hidden !important;
+}
+
+.hidden-mobile {
+  @media (max-width: 1035px) {
+    display: none !important;
+  }
+}
+
+.visible-mobile {
+  @media (min-width: 1036px) {
+    display: none !important;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-light);
+}
+
+a:hover, a:active {
+  opacity: 0.8;
+}
+
+h1, .h1 {
+  line-height: 100%;
+  color: var(--color-dark);
+  font-size: 40px;
+}
+
+h2, .h2 {
+  line-height: 100%;
+  color: var(--color-dark);
+  font-size: 38px;
+}
+
+h3, .h3 {
+  line-height: 100%;
+  color: var(--color-dark);
+  font-size: 36px;
+}
+
+h4, .h4 {
+  line-height: 100%;
+  color: var(--color-dark);
+  font-size: 34px;
+}
+
+h5, .h5 {
+  line-height: 100%;
+  color: var(--color-dark);
+  font-size: 32px;
+}
+
+h6, .h6 {
+  line-height: 100%;
+  color: var(--color-dark);
+  font-size: 30px;
 }

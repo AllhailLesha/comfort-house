@@ -2,21 +2,24 @@
   --color-dark: #000;
   --color-dark-alt: #666;
   --color-accent: #f7a420;
-  --color-light: #fff;
+  --color-light: #ffffff;
+  --color-light-opacity: rgba(255, 255, 255, 0.48);
+  --color-blue: #28838c; 
+  --color-dark-blue: #19646b;
 
-  --border-radius: 32px;
+  --border-radius: 24px;
+  --border-radius-large: 32px;
 
   --font-family-base: 'Calibri Regular', sans-serif;
+  --font-family-bold: 'Akrobat';
 
   --section-padding-y: 80px;
 
   --container-padding-x: 20px;
-  --container--width: 1400px;
+  --container-width: 1400px;
 
   --input-height: 64px;
   --button-height: 64px;
 
   --transition-duration: 0.3s;
-
-  
 }

@@ -8,60 +8,139 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__inner container">
-        <div class="header__body">
-          <a class="header__logo logo" href="">
+      <div class="header__wrapper">
+        <div class="header__body container">
+          <a class="header__logo logo" href="#">
             <img
               class="logo__image"
-              src="./image/logo.jpg"
+              src="./image/logo.png"
               alt="Уют Дом"
               width="192"
               height="192"
             />
-            <div class="logo__text">Комфорт и спокойствие в каждом доме!</div>
+            <div class="logo__text">
+              Комфорт и спокойствие <br />
+              в каждом доме!
+            </div>
           </a>
-          <ul class="header__contacts-list">
-            <li class="header__contacts-item">
-              <img
-                class="header__contacts-image"
-                src="./image/header/header-phone.svg"
-                alt=""
-              />
-              <div class="header__contacts-title">Диспетчерская:</div>
-              <a href="tel:+74872520007">8 (4872) 52-00-07</a>
-            </li>
-            <li class="header__contacts-item">
-              <img
-                class="header__contacts-image"
-                src="./image/header/header-phone.svg"
-                alt=""
-              />
-              <div class="header__contacts-title">Секретарь:</div>
-              <a href="tel:+74872704141">8 (4872) 70-41-41</a>
-            </li>
-            <li class="header__contacts-item">
-              <img
-                class="header__contacts-image"
+          <div class="header__contacts">
+            <div class="header__contacts-phone header-phone">
+              <ul class="header-phone__list">
+                <li class="header-phone__item">
+                  <div class="header-phone__title">Диспетчерская:</div>
+                  <a class="header-phone__link" href="tel:+74872520007">
+                    <img
+                      class="header-phone__image"
+                      src="./image/header/header-phone.svg"
+                      alt=""
+                    />
+                    <p>8 (4872) 52-00-07</p>
+                  </a>
+                </li>
+                <li class="header-phone__item">
+                  <div class="header-phone__title">Секретарь:</div>
+                  <a class="header-phone__link" href="tel:+74872704141">
+                    <img
+                      class="header-phone__image"
+                      src="./image/header/header-phone.svg"
+                      alt=""
+                    />
+                    <p>8 (4872) 70-41-41</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="header__contacts-sotial header-sotial">
+              <a class="header-sotial__link" href="#">
+                <img
+                class="header-sotial__image"
                 src="./image/header/header-whatsUp.svg"
                 alt=""
-              />
-              <div class="header__contacts-title">
-                <a class="header__contacts-link" href="">WhatsApp</a>
-              </div>
-            </li>
-          </ul>
+                />
+                WhatsApp
+              </a>
+            </div>
+          </div>
+          <button class="header__burger-button burger-button visible-mobile" button="button" onclick="mobileOverlay.showModal()">
+            <span class="visually-hidden">Открыть навигационное меню</span>
+          </button>
         </div>
-        <nav class="header__menu">
+      </div>
+      <nav class="header__menu container hidden-mobile">
+        <div class="header__menu-wrapper">
           <ul class="header__menu-list">
             <li class="header__menu-item">
-              <a class="header__menu-link" href="">На главную</a>
+              <a class="header__menu-link" href="#">На главную</a>
             </li>
             <li class="header__menu-item">
-              <a class="header__menu-link" href="">О компании</a>
+              <a class="header__menu-link" href="#">О компании</a>
+            </li>
+            <li class="header__menu-item header__menu-item--dropdown">
+              <a class="header__menu-link header__menu-link--arrow" href="#">Платные услуги</a>
+              <div class="dropdown">
+                <ul class="header__menu-dropdown dropdown__list">
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">Платная услуга</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">Платная услуга</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">Платная услуга</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">Платная услуга</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">Платная услуга</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">Платная услуга</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">Платная услуга</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">Платная услуга</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">Платная услуга</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="header__menu-item">
-              <a class="header__menu-link" href="">Платные услуги</a>
-              <ul class="header__menu-dropdown dropdown">
+              <a class="header__menu-link" href="#"
+                >Информация для потребителей ЖКУ
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <button class="header__menu-button button" type="button">СТАТЬ КЛИЕНТОМ УЮТДОМ</button>
+        </div>
+      </nav>
+    </header>
+
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+      <form class="mobile-overlay__close-button-wrapper" method="dialog">
+        <button class="mobile-overlay__close-button cross-button" type="submit">
+          <span class="visually-hidden">Закрыть навигационное меню</span>
+        </button>
+      </form>
+      <div class="mobile-overlay__body">
+        <ul class="menu-overlay__list">
+          <li class="menu-overlay__item">
+            <a class="menu-overlay__link" href="#">На главную</a>
+          </li>
+          <li class="menu-overlay__item">
+            <a class="menu-overlay__link" href="#">О компании</a>
+          </li>
+          <li class="menu-overlay__item menu-overlay__item--dropdown">
+            <a class="menu-overlay__link menu-overlay__link--arrow" href="#">Платные услуги</a>
+            <div class="dropdown">
+              <ul class="dropdown__list">
                 <li class="dropdown__item">
                   <a class="dropdown__link" href="#">Платная услуга</a>
                 </li>
@@ -90,21 +169,59 @@
                   <a class="dropdown__link" href="#">Платная услуга</a>
                 </li>
               </ul>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href=""
-                >Информация для потребителей ЖКУ</a
-              >
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="">Контакты</a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="">СТАТЬ КЛИЕНТОМ УК УЮТДОМ</a>
-            </li>
-          </ul>
-        </nav>
+            </div>
+          </li>
+          <li class="menu-overlay__item">
+            <a class="menu-overlay__link" href="#">Информация для потребителей ЖКУ</a>
+          </li>
+          <li class="menu-overlay__item">
+            <a class="menu-overlay__link" href="#">Контакты</a>
+          </li>
+          <li class="menu-overlay__item">
+            <button class="menu-overlay__button button" type="button">СТАТЬ КЛИЕНТОМ УК УЮТДОМ</button>
+          </li>
+        </ul>
+        <div class="mobile-overlay__contacts">
+          <div class="mobile-overlay__contacts-phones">
+            <div class="mobile-overlay__contacts-phone">
+              <div class="mobile-overlay__contacts-title">
+                Диспетчерская:
+              </div>
+              <a class="mobile-overlay__contacts-link" href="tel:+74872704141">
+                <img
+                  class="mobile-overlay__contacts-image"
+                  src="./image/header/header-phone.svg"
+                  alt=""
+                />
+                <p>8 (4872) 70-41-41</p>
+              </a>
+            </div>
+            <div class="mobile-overlay__contacts-phone">
+              <div class="mobile-overlay__contacts-title">Секретарь:</div>
+              <a class="mobile-overlay__contacts-link" href="tel:+74872704141">
+                <img
+                  class="mobile-overlay__contacts-image"
+                  src="./image/header/header-phone.svg"
+                  alt=""
+                />
+                <p>8 (4872) 70-41-41</p>
+              </a>
+            </div>
+          </div>
+          <div class="mobile-overlay__contacts-sotials">
+            <div class="mobile-overlay__contacts-sotial">
+              <a class="mobile-overlay__sotial-link" href="#">
+                <img
+                class="mobile-overlay__sotial-image"
+                src="./image/header/header-whatsUp.svg"
+                alt=""
+                />
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-    </header>
+    </dialog>
   </body>
 </html>

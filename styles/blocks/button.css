@@ -1,0 +1,27 @@
+.button {
+  display: inline-block;
+  text-align: center;
+  height: 64px;
+  padding: 20px 40px;
+
+  background-color: var(--color-accent);
+  border: none;
+  border-radius: var(--border-radius-large);
+  color: var(--color-dark);
+
+  font-family: var(--font-family-bold);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+
+  transition-duration: var(--transition-duration);
+
+  cursor: pointer;
+  white-space: nowrap;
+
+}
+
+.button:hover {
+  opacity: 0.8;
+}
