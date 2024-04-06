@@ -173,7 +173,7 @@
   flex-direction: column;
   justify-content: start;
   white-space: nowrap;
-  padding-block: 24px;
+  padding: 24px;
   background-color: var(--color-blue);
 }
 
