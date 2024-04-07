@@ -1,0 +1,72 @@
+.ad-board {
+  padding-block: var(--section-padding-y);
+}
+
+.ad-board__title {
+  margin-bottom: 40px;
+}
+
+.ad-board__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+}
+
+.ad-board__body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 40px;
+}
+
+.ad-board__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  width: 100%;
+}
+
+.ad-board__card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  padding: 32px;
+  border-radius: var(--border-radius-large);
+  background-color: #f2f7f7;
+}
+
+.ad-board__card-date {
+  position: relative;
+  color: #19646b;
+  padding-left: 2em;
+  line-height: 1;
+  font-size: 16px;
+}
+
+.ad-board__card-date::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  background-image: url('../../image/ad-board/calendar.svg');
+  width: 24px;
+  height: 24px;
+}
+
+.ad-board__link {
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: var(--border-radius-large);
+  background-color: var(--color-accent);
+
+  color: var(--color-dark);
+  font-family: var(--font-family-bold);
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.ad-board__image {
+  height: 100%;
+}
