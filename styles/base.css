@@ -25,14 +25,20 @@ body {
   overflow: hidden !important;
 }
 
+.visible-desktop {
+  @media (max-width: 1444px) {
+    display: none !important;
+  }
+}
+
 .hidden-mobile {
-  @media (max-width: 1035px) {
+  @media (max-width: 997px) {
     display: none !important;
   }
 }
 
 .visible-mobile {
-  @media (min-width: 1036px) {
+  @media (min-width: 998px) {
     display: none !important;
   }
 }

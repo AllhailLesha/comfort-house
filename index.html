@@ -77,37 +77,35 @@
             </li>
             <li class="header__menu-item header__menu-item--dropdown">
               <a class="header__menu-link header__menu-link--arrow" href="#">Платные услуги</a>
-              <div class="dropdown">
-                <ul class="header__menu-dropdown dropdown__list">
-                  <li class="dropdown__item">
-                    <a class="dropdown__link" href="#">Платная услуга</a>
-                  </li>
-                  <li class="dropdown__item">
-                    <a class="dropdown__link" href="#">Платная услуга</a>
-                  </li>
-                  <li class="dropdown__item">
-                    <a class="dropdown__link" href="#">Платная услуга</a>
-                  </li>
-                  <li class="dropdown__item">
-                    <a class="dropdown__link" href="#">Платная услуга</a>
-                  </li>
-                  <li class="dropdown__item">
-                    <a class="dropdown__link" href="#">Платная услуга</a>
-                  </li>
-                  <li class="dropdown__item">
-                    <a class="dropdown__link" href="#">Платная услуга</a>
-                  </li>
-                  <li class="dropdown__item">
-                    <a class="dropdown__link" href="#">Платная услуга</a>
-                  </li>
-                  <li class="dropdown__item">
-                    <a class="dropdown__link" href="#">Платная услуга</a>
-                  </li>
-                  <li class="dropdown__item">
-                    <a class="dropdown__link" href="#">Платная услуга</a>
-                  </li>
-                </ul>
-              </div>
+              <ul class="header__menu-dropdown dropdown__list">
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Платная услуга</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Платная услуга</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Платная услуга</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Платная услуга</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Платная услуга</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Платная услуга</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Платная услуга</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Платная услуга</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#">Платная услуга</a>
+                </li>
+              </ul>
             </li>
             <li class="header__menu-item">
               <a class="header__menu-link" href="#"
@@ -122,6 +120,54 @@
         </div>
       </nav>
     </header>
+
+    <main class="content">
+      <section class="section container">
+        <div class="section__body">
+          <div class="about-company">
+            <h2 class="about-company__title">О компании</h2>
+            <div class="about-company__wrapper">
+              <div class="about-company__body">
+                <div class="about-company__text">
+                  <p class="class">Компания ООО «УютДом» работает на рынке ремонта многоквартирных домов с 2005 года. С момента своего основания организация занималась ремонтно-строительными работами и специализировалась на ремонте инженерных коммуникаций и конструктивных элементов в жилых домах. Это и водопровод, канализация, отопление, кровля – всё то, что обеспечивает жильцам комфортное проживание.
+                    <a class="visible-mobile" href="#">Подробнее</a>
+                  </p>
+                  <p class="visible-desktop">Наша деятельность отвечает всем требованиям действующего законодательства. ООО «УютДом» располагает штатом профессиональных специалистов для того, чтобы решить такую сложную задачу, как управление многоквартирного дома на самом высоком уровне.</p>
+                  <p class="hidden-mobile">Техническое обслуживание зданий предполагает постоянный мониторинг состояния всех инженерных коммуникаций объекта (тепло-, водо- и электроснабжение, канализация и др.), ведение переговоров с поставщиками и подрядчиками, а также выполнение необходимых уборочных работ <a class="hidden-mobile" href="#">Подробнее</a></p>
+                </div>
+                <a class="about-company__link" href="#">
+                  <img class="about-company__image" src="./image/about-company/telegram.svg" alt="Мы в телеграмм">
+                  <p>Мы в Telegram</p>
+                </a>
+              </div>
+              <div class="about-company__slider slider">
+                <div class="slider__body">
+                  <img class="slider__image" src="./image/about-company/certificate.jpg" alt="Сертифекат" data-index="1">
+                  <img class="slider__image" src="./image/about-company/certificate.jpg" alt="Сертифекат" data-index="2">
+                  <img class="slider__image" src="./image/about-company/certificate.jpg" alt="Сертифекат" data-index="3">
+
+                  <button class="slider__button slider__button--prev" id="prev" type="button">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.828 7.00017H16V9.00017H3.828L9.192 14.3642L7.778 15.7782L0 8.00017L7.778 0.222168L9.192 1.63617L3.828 7.00017Z" fill="white"/>
+                    </svg>                    
+                  </button>
+                  <button class="slider__button slider__button--next" id="next" type="button">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.172 7.00017H0V9.00017H12.172L6.808 14.3642L8.222 15.7782L16 8.00017L8.222 0.222168L6.808 1.63617L12.172 7.00017Z" fill="white"/>
+                    </svg>
+                  </button>
+                </div>
+                <div class="slider__pagination">
+                  <button class="slider__pagination-item" type="button"></button>
+                  <button class="slider__pagination-item slider__pagination-item--active" type="button"></button>
+                  <button class="slider__pagination-item" type="button"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
       <form class="mobile-overlay__close-button-wrapper" method="dialog">
@@ -138,7 +184,7 @@
             <a class="menu-overlay__link" href="#">О компании</a>
           </li>
           <li class="menu-overlay__item">
-            <details class="menu-overlay__dropdown" name="" id="" open="">
+            <details class="menu-overlay__dropdown" name="" id="">
               <summary>платные услуги</summary>
               <div class="menu-overlay__dropdown-body">
                 <a class="menu-overlay__dropdown-link" href="#">Платная услуга</a>
@@ -203,5 +249,7 @@
         </div>
       </div>
     </dialog>
+
+    <script src="./main.js"></script>
   </body>
 </html>
