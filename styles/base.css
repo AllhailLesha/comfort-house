@@ -59,9 +59,23 @@ h1, .h1 {
 }
 
 h2, .h2 {
+  position: relative;
+  padding-left: 56px;
+
   line-height: 100%;
   color: var(--color-dark);
   font-size: 38px;
+}
+
+.h2::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  transform: translate(-50% -50%);
+  width: 32px;
+  height: 4px;
+  background-color: var(--color-accent);
 }
 
 h3, .h3 {

@@ -5,22 +5,6 @@
   padding-bottom: var(--section-padding-y);
 }
 
-.about-company__title {
-  position: relative;
-  padding-left: 56px;
-}
-
-.about-company__title::before {
-  position: absolute;
-  content: "";
-  top: 50%;
-  left: 0;
-  transform: translate(-50% -50%);
-  width: 32px;
-  height: 4px;
-  background-color: var(--color-accent);
-}
-
 .about-company__wrapper {
   display: flex;
   column-gap: 40px;
