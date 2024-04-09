@@ -67,6 +67,29 @@
   text-transform: uppercase;
 }
 
+
 .ad-board__image {
+  width: 100%;
   height: 100%;
+  object-fit: cover ;
+  object-position: right;
+}
+
+@media (max-width: 1241px) {
+  .ad-board__wrapper {
+    column-gap: 32px;
+  }
+}
+
+@media (max-width: 1033px) {
+  .ad-board__wrapper {
+    column-gap: 16px;
+  }
+}
+
+@media (max-width: 990px) {
+  .ad-board__wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 40px;
+  }
 }
