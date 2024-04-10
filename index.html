@@ -242,7 +242,54 @@
           </div>
         </div>
       </section>
+
+      <section class="section">
+        <div class="section__body">
+          <div class="write-message">
+            <div class="write-message__wrapper container">
+              <h2 class="write-message__title h2">Написать сообщение</h2>
+              <div class="write-message__body">
+                <form class="write-message__form form">
+                  <fieldset class="form__fieldset form__fieldset--two">
+                    <legend class="form__title visually-hidden">Выберете адресс</legend>
+                    <label class="form__label visually-hidden" for="address">Адресс</label>
+                    <input class="form__input input" type="text" id="address" name="address"  placeholder="Выберете адресс *">
+                    <label class="form__label visually-hidden" for="apartment">Номер квартиры/помещения</label>
+                    <input class="form__input input" type="text" id="apartment" name="apartment" placeholder="Номер квартиры/помещения *">
+                  </fieldset>
+                  <fieldset class="form__fieldset form__fieldset--three">
+                    <legend class="form__title visually-hidden">Контактная информация</legend>
+                    <label class="form__label visually-hidden" for="fullName">Фамилия Имя Отчество</label>
+                    <input class="form__input input" type="text" id="fullName" name="fullName" placeholder="ФИО *">
+                    <label class="form__label visually-hidden" for="tel">Ваш телефон</label>
+                    <input class="form__input input" type="tel" name="tel" id="tel" placeholder="Ваш телефон">
+                    <label class="form__label visually-hidden" for="email">Ваш email</label>
+                    <input class="form__input input" type="email" name="email" id="email" placeholder="E-mail *">
+                  </fieldset>
+                  <textarea name="" id="" cols="30" rows="10" placeholder="Ваше сообщене"></textarea>
+                  <div class="form__pin-file pin-file">
+                    <label class="pin-file__label" for="inputFile">
+                      <input class="pin-file__input " type="file" id="inputFile">
+                      <span class="pin-file__text">Прикрепить файл</span>
+                    </label>
+                  </div>
+                  <div class="form__submit">
+                    <label class="form__label checkbox" for="checkbox">
+                      <input class="checkbox__input" type="checkbox" id="checkbox" checked> 
+                      <span></span>
+                      Отправляя заявку, вы соглашаетесь на обработку ваших персональных данных
+                    </label>
+                    <button class="form__button button" type="submit">Отправить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    
 
     <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
       <form class="mobile-overlay__close-button-wrapper" method="dialog">
