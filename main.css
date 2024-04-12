@@ -4,6 +4,10 @@
 @import url('./styles/base.css');
 
 @import url('./styles/blocks/button.css');
+@import url('./styles/blocks/input.css');
+@import url('./styles/blocks/checkbox.css');
+@import url('./styles/blocks/pin-file.css');
+@import url('./styles/blocks/form.css');
 @import url('./styles/blocks/burger-button.css');
 @import url('./styles/blocks/cross-button.css');
 @import url('./styles/blocks/mobile-overlay.css');
@@ -14,3 +18,5 @@
 @import url('./styles/blocks/services.css');
 @import url('./styles/blocks/ad-board.css');
 @import url('./styles/blocks/section.css');
+@import url('./styles/blocks/write-message.css');
+
