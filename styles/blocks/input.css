@@ -1,0 +1,53 @@
+.input {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--border-radius-large);
+  padding: 24px 24px 24px 80px;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: 24px;
+}
+
+#address {
+  background-image: url('../../image/form/location.svg');
+}
+
+#apartment {
+  background-image: url('../../image/form/apartment.svg');
+}
+
+#fullName {
+  background-image: url('../../image/form/human.svg');
+}
+
+#tel {
+  background-image: url('../../image/form/phone.svg');
+}
+
+#email {
+  background-image: url('../../image/form/mail.svg');
+}
+
+.input__wrapper {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.input__wrapper::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #c5c5c5;
+  left: 64px;
+}
+
+.input::placeholder {
+  opacity: 1;
+  color: var(--color-dark);
+}

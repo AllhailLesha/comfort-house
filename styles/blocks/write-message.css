@@ -1,0 +1,25 @@
+.write-message {
+  background-image: url('../../image/write-message/bg-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: var(--section-padding-y);
+  padding-bottom: 64px;
+  color: var(--color-light);
+}
+
+.write-message__title {
+  margin-bottom: 32px;
+  color: var(--color-light);
+}
+
+@media (max-width: 780px) {
+  .write-message {
+    padding-block: 56px 88px;
+  }
+}
+
+@media (max-width: 580px) {
+  .write-message {
+    padding-block: 56px 56px;
+  }
+}
