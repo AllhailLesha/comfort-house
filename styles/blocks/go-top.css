@@ -1,0 +1,18 @@
+.go-top__link {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 104px;
+  right: 50px;
+  width: 64px;
+  height: 64px;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+}
+
+@media (max-width: 940px) {
+  .go-top__link {
+    display: none;
+  }
+} 

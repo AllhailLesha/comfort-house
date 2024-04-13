@@ -31,12 +31,6 @@ body {
   }
 }
 
-.hidden-desktop {
-  @media (min-width: 940px) {
-    display: none !important;
-  }
-}
-
 .hidden-mobile {
   @media (max-width: 997px) {
     display: none !important;
