@@ -7,7 +7,7 @@
     <link href="main.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="header__wrapper">
         <div class="header__body container">
           <a class="header__logo logo" href="#">
@@ -304,8 +304,55 @@
       </section>
     </main>
 
-    
-
+    <footer class="footer">
+      <div class="footer__body container">
+        <a class="footer__logo" href="#">
+          <img class="footer__image" src="./image/logo.png" alt="Уют Дом" width="88" height="88" loading="lazy">
+        </a>
+        <address class="footer__contacts contacts">
+          <div class="contacts__address">
+            <p>ООО "УютДом" <br>
+              Адрес: 300041, г. Тула, <br>
+              ул. Тургеневская, д. 47а, офис 315
+            </p>
+          </div>
+          <ul class="contacts__list"> 
+            <li class="contacts__item">
+              <p>Секретарь:</p>
+              <a href="tel:+74872702029">+7 (4872) 70-20-29</a>
+            </li>
+            <li class="contacts__item">
+              <p>Диспетчерская:</p>
+              <a href="tel:+74872520007">+7 (4872) 52-00-07</a>
+            </li>
+            <li class="contacts__item">
+              <p>Абонентский отдел:</p>
+              <a href="tel:525344">+7 (4872) 52-53-32, 52-53-44</a>
+            </li>
+            <li class="contacts__item contacts__item--whats-up">
+              <a href="#">
+                <img src="./image/header/header-whatsUp.svg" alt="WhatsApp" width="32" height="32" loading="lazy">
+                WhatsApp
+              </a>
+            </li>
+          </ul>
+          <div class="contacts__email">
+            <p>Наша почта:</p>
+            <a href="mailto:yutdom_11@mail.ru">yutdom_11@mail.ru</a>
+          </div>
+          <a class="contacts__link" href="#">
+            <img class="contacts__image" src="./image/footer/telegram.png" alt="Telegram" width="32" height="32" loading="lazy">
+          </a>
+        </address>
+        <div class="footer__dev-logo">
+          <a class="footer__dev-link" href="https://www.brevis-site.ru/">
+            <img class="footer__dev-image" src="./image/footer/brevis 1.png" alt="Brevis">
+            <p>Разработка корпоративного сайта интернет-агентство BREVIS
+            </p>
+          </a>
+        </div>
+      </div>
+    </footer>
     <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
       <form class="mobile-overlay__close-button-wrapper" method="dialog">
         <button class="mobile-overlay__close-button cross-button" type="submit">

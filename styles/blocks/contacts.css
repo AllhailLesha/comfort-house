@@ -1,0 +1,130 @@
+.contacts {
+  display: flex;
+  align-items: start;
+  color: var(--color-light);
+  column-gap: 24px;
+  font-style: normal;
+}
+
+.contacts__address {
+  white-space: nowrap;
+  font-family: var(--font-family-bold);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+.contacts__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px 24px;
+  align-items: center;
+  justify-content: center;
+  column-gap: 24px;
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+.contacts__item--whats-up {
+  grid-column: 2/3;
+}
+
+.contacts__item--whats-up a {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.contacts__item p {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-family: var(--font-family-base);
+  font-weight: 400;
+  line-height: 1.14;
+}
+
+.contacts__item a {
+  white-space: nowrap;
+  font-family: var(--font-family-bold);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+.contacts__email p {
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 0px;
+}
+
+.contacts__email a {
+  padding-left: 32px;
+  background-image: url('../../image/footer/email.svg');
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: 0px;
+  font-family: var(--font-family-bold);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+.contacts__image {
+  min-width: 32px
+}
+
+@media (max-width: 1350px) {
+  .contacts__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1170px) {
+  .contacts__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contacts__address {
+    display: none;
+  }
+}
+
+@media (max-width: 940px) {
+  .contacts__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contacts__item--whats-up {
+    grid-column: 1/1;
+  }
+}
+
+@media (max-width: 770px) {
+  .contacts__list {
+    display: none;
+  }
+  .contacts__email {
+    display: none;
+  }
+
+  .contacts__link {
+    display: none;
+  }
+
+  .contacts__address {
+    display: block;
+  }
+}
+
+@media (max-width: 580px) {
+  .contacts__address {
+    display: none;
+  }
+}
+
+
